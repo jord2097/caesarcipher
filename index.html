@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Cipher</title>
+</head>
+<body>
+    <form id="cipherForm">
+        <label for="userInput">Enter Text To Modify:</label>
+        <input type="text" id="userInput" oninput="start()">
+        <br><br>
+        <label for="encrypt">Encrypt:</label>
+        <input type="radio" name="mode" id="encrypt" checked onchange="start()">
+        <label for="decrypt">Decrypt:</label>
+        <input type="radio" name="mode" id="decrypt" onchange="start()">
+        <br><br>
+        <label for="userKey">Key:</label>
+        <input type="number" min="1" max="25" id="userKey" value="1" oninput="start()">
+        <br> <br>
+        <label for="output">Output:</label>
+        <textarea readonly id="output"></textarea>
+
+
+    </form>
+    
+    <script src="index.js"></script>
+</body>
+</html>
